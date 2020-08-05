@@ -21,18 +21,18 @@
 
 
 module DataPath# (parameter WIDTH = 2, DEPTH = 2)(
-    input [WIDTH-1:0] A  [DEPTH-1:0],
-    input [WIDTH-1:0] An [DEPTH-1:0],
-    input [WIDTH-1:0] B  [DEPTH-1:0],
-    input load,
-    input en,
-    //input [WIDTH-1:0] sel,
-    input done,
-    input clk,
-    input rst,
-    input down,
-    output [WIDTH-1:0] AdotB, AndotB ,
-    output wire cnt_zero
+    input  [WIDTH-1:0] A  [DEPTH-1:0],
+    input  [WIDTH-1:0] An [DEPTH-1:0],
+    input  [WIDTH-1:0] B  [DEPTH-1:0],
+    input              load,
+    input              en,
+    input              done,
+    input              clk,
+    input              rst,
+    input              down,
+    output [WIDTH-1:0] AdotB, 
+                       AndotB,
+    output wire        cnt_zero
     );
     
     wire [DEPTH-1:0] qA, qAn;
@@ -43,7 +43,8 @@ module DataPath# (parameter WIDTH = 2, DEPTH = 2)(
     wire [WIDTH-1:0] R, Rn, sel;
     wire [WIDTH-1:0] Result [0:0], Resultn [0:0], qResult [0:0], qResultn [0:0];
     wire [WIDTH-1:0] qR, qRn ;
-    //input registers
+    
+    //input data registers
     transposer #(WIDTH,DEPTH) transposerA (
         .clk(clk),    
         .rst(rst),
@@ -79,10 +80,9 @@ module DataPath# (parameter WIDTH = 2, DEPTH = 2)(
         .q(sel)
     
     );
+    assign cnt_zero = &sel; // this flag will become 1 when index = 0
     
-    assign cnt_zero = &sel;
     //and operation
-    
     AND #(WIDTH) A0B (
         .a({WIDTH{qA[0]}}),
         .b(qB[0]),
@@ -108,32 +108,32 @@ module DataPath# (parameter WIDTH = 2, DEPTH = 2)(
     );
     
     //add operation
-    adder #(WIDTH) AaddB (
+    adder #(WIDTH) AaddB (  //A+B
         .a(A0andB),
         .b(A1andB),
         .y(AplusB)
     );
     
-    adder #(WIDTH) AnaddB (
+    adder #(WIDTH) AnaddB ( //An+B
         .a(An0andB),
         .b(An1andB),
         .y(AnplusB)
     );
     
-    adder #(WIDTH) ABR (
+    adder #(WIDTH) ABR (    // A+B+R
         .a(AplusB),
         .b(Rshifted),
         .y(R)
     );
     
-    adder #(WIDTH) AnBR (
+    adder #(WIDTH) AnBR (  //An+B+R
         .a(AnplusB),
         .b(Rnshifted),
         .y(Rn)
     );
     
-    assign Result[0] = R;
-    assign Resultn[0] = Rn;
+    assign Result[0] = R;  //since verilog cannot assign a packed type w unpacked type signal
+    assign Resultn[0] = Rn; // These 2 lines of extra signal assignment are needed
 
     
     //result registers
@@ -141,7 +141,7 @@ module DataPath# (parameter WIDTH = 2, DEPTH = 2)(
         .clk(clk),    
         .rst(rst),
         .load(en),
-        .d(Result),
+        .d(Result),  
         .q(qResult)
     );
     
@@ -153,8 +153,8 @@ module DataPath# (parameter WIDTH = 2, DEPTH = 2)(
         .q(qResultn)
     );
     
-    assign qR = qResult[0];
-    assign qRn = qResultn[0];
+    assign qR = qResult[0]; //since verilog cannot assign a packed type w unpacked type signal
+    assign qRn = qResultn[0]; // These 2 lines of extra signal assignment are needed
     
     //shift operation
     shifter #(WIDTH) shiftR(
@@ -168,8 +168,8 @@ module DataPath# (parameter WIDTH = 2, DEPTH = 2)(
     );   
     
     //done muxes
-    mux2 #(WIDTH) muxR (
-        .sel(done),
+    mux2 #(WIDTH) muxR (    // these muxes is to output the final result 
+        .sel(done),         // only when the done signal is asserted
         .a({WIDTH{1'b0}}),
         .b(qR), 
         .y(AdotB)   

@@ -5,27 +5,27 @@ Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "C:/Users/phatle/dot_product/dot_product.srcs/sources_1/new/AND.v" Line 1. Module AND(WIDTH=3) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/phatle/dot_product/dot_product.srcs/sources_1/new/AND.v" Line 1. Module AND(WIDTH=3) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/phatle/dot_product/dot_product.srcs/sources_1/new/AND.v" Line 1. Module AND(WIDTH=3) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/phatle/dot_product/dot_product.srcs/sources_1/new/AND.v" Line 1. Module AND(WIDTH=3) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/phatle/dot_product/dot_product.srcs/sources_1/imports/datapath/adder.v" Line 1. Module adder(WIDTH=3) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/phatle/dot_product/dot_product.srcs/sources_1/imports/datapath/adder.v" Line 1. Module adder(WIDTH=3) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/phatle/dot_product/dot_product.srcs/sources_1/imports/datapath/adder.v" Line 1. Module adder(WIDTH=3) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/phatle/dot_product/dot_product.srcs/sources_1/imports/datapath/adder.v" Line 1. Module adder(WIDTH=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/phatle/dot_product/dot_product.srcs/sources_1/new/AND.v" Line 1. Module AND(WIDTH=4) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/phatle/dot_product/dot_product.srcs/sources_1/new/AND.v" Line 1. Module AND(WIDTH=4) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/phatle/dot_product/dot_product.srcs/sources_1/new/AND.v" Line 1. Module AND(WIDTH=4) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/phatle/dot_product/dot_product.srcs/sources_1/new/AND.v" Line 1. Module AND(WIDTH=4) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/phatle/dot_product/dot_product.srcs/sources_1/imports/datapath/adder.v" Line 1. Module adder(WIDTH=4) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/phatle/dot_product/dot_product.srcs/sources_1/imports/datapath/adder.v" Line 1. Module adder(WIDTH=4) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/phatle/dot_product/dot_product.srcs/sources_1/imports/datapath/adder.v" Line 1. Module adder(WIDTH=4) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/phatle/dot_product/dot_product.srcs/sources_1/imports/datapath/adder.v" Line 1. Module adder(WIDTH=4) doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.ControlUnit
-Compiling module xil_defaultlib.transposer(WIDTH=3)
-Compiling module xil_defaultlib.dreg(WIDTH=3)
-Compiling module xil_defaultlib.counter(WIDTH=3)
-Compiling module xil_defaultlib.AND(WIDTH=3)
-Compiling module xil_defaultlib.adder(WIDTH=3)
-Compiling module xil_defaultlib.dreg(WIDTH=3,DEPTH=1)
-Compiling module xil_defaultlib.shifter(WIDTH=3)
-Compiling module xil_defaultlib.mux2(WIDTH=3)
-Compiling module xil_defaultlib.DataPath(WIDTH=3)
-Compiling module xil_defaultlib.dot_product_top(WIDTH=3)
+Compiling module xil_defaultlib.ControlUnit(WIDTH=4)
+Compiling module xil_defaultlib.transposer(WIDTH=4)
+Compiling module xil_defaultlib.dreg(WIDTH=4)
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.AND(WIDTH=4)
+Compiling module xil_defaultlib.adder(WIDTH=4)
+Compiling module xil_defaultlib.dreg(WIDTH=4,DEPTH=1)
+Compiling module xil_defaultlib.shifter(WIDTH=4)
+Compiling module xil_defaultlib.mux2(WIDTH=4)
+Compiling module xil_defaultlib.DataPath(WIDTH=4)
+Compiling module xil_defaultlib.dot_product_top(WIDTH=4)
 Compiling module xil_defaultlib.dot_product_tb
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot dot_product_tb_behav

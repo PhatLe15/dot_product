@@ -13,24 +13,24 @@
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
       <ZoomEndTime time="210000000fs"></ZoomEndTime>
-      <Cursor1Time time="210000000fs"></Cursor1Time>
+      <Cursor1Time time="25000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="319"></NameColumnWidth>
       <ValueColumnWidth column_width="140"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="13" />
+   <WVObjectSize size="16" />
    <wvobject fp_name="/dot_product_tb/A" type="array">
-      <obj_property name="ElementShortName">A[1:0][2:0]</obj_property>
-      <obj_property name="ObjectShortName">A[1:0][2:0]</obj_property>
+      <obj_property name="ElementShortName">A[1:0][3:0]</obj_property>
+      <obj_property name="ObjectShortName">A[1:0][3:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/dot_product_tb/An" type="array">
-      <obj_property name="ElementShortName">An[1:0][2:0]</obj_property>
-      <obj_property name="ObjectShortName">An[1:0][2:0]</obj_property>
+      <obj_property name="ElementShortName">An[1:0][3:0]</obj_property>
+      <obj_property name="ObjectShortName">An[1:0][3:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/dot_product_tb/B" type="array">
-      <obj_property name="ElementShortName">B[1:0][2:0]</obj_property>
-      <obj_property name="ObjectShortName">B[1:0][2:0]</obj_property>
+      <obj_property name="ElementShortName">B[1:0][3:0]</obj_property>
+      <obj_property name="ObjectShortName">B[1:0][3:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/dot_product_tb/go_tb" type="logic">
       <obj_property name="ElementShortName">go_tb</obj_property>
@@ -41,12 +41,12 @@
       <obj_property name="ObjectShortName">clk_tb</obj_property>
    </wvobject>
    <wvobject fp_name="/dot_product_tb/R_tb" type="array">
-      <obj_property name="ElementShortName">R_tb[2:0]</obj_property>
-      <obj_property name="ObjectShortName">R_tb[2:0]</obj_property>
+      <obj_property name="ElementShortName">R_tb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">R_tb[3:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/dot_product_tb/Rn_tb" type="array">
-      <obj_property name="ElementShortName">Rn_tb[2:0]</obj_property>
-      <obj_property name="ObjectShortName">Rn_tb[2:0]</obj_property>
+      <obj_property name="ElementShortName">Rn_tb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Rn_tb[3:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/dot_product_tb/done_tb" type="logic">
       <obj_property name="ElementShortName">done_tb</obj_property>
@@ -56,69 +56,22 @@
       <obj_property name="ElementShortName">CS[1:0]</obj_property>
       <obj_property name="ObjectShortName">CS[1:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="group35" type="group">
-      <obj_property name="label">CU</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <wvobject fp_name="/dot_product_tb/DUT/A" type="array">
-         <obj_property name="ElementShortName">A[1:0][2:0]</obj_property>
-         <obj_property name="ObjectShortName">A[1:0][2:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/dot_product_tb/DUT/An" type="array">
-         <obj_property name="ElementShortName">An[1:0][2:0]</obj_property>
-         <obj_property name="ObjectShortName">An[1:0][2:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/dot_product_tb/DUT/B" type="array">
-         <obj_property name="ElementShortName">B[1:0][2:0]</obj_property>
-         <obj_property name="ObjectShortName">B[1:0][2:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/dot_product_tb/DUT/go" type="logic">
-         <obj_property name="ElementShortName">go</obj_property>
-         <obj_property name="ObjectShortName">go</obj_property>
-      </wvobject>
-      <wvobject fp_name="/dot_product_tb/DUT/clk" type="logic">
-         <obj_property name="ElementShortName">clk</obj_property>
-         <obj_property name="ObjectShortName">clk</obj_property>
-      </wvobject>
-      <wvobject fp_name="/dot_product_tb/DUT/R" type="array">
-         <obj_property name="ElementShortName">R[2:0]</obj_property>
-         <obj_property name="ObjectShortName">R[2:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/dot_product_tb/DUT/Rn" type="array">
-         <obj_property name="ElementShortName">Rn[2:0]</obj_property>
-         <obj_property name="ObjectShortName">Rn[2:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/dot_product_tb/DUT/done" type="logic">
-         <obj_property name="ElementShortName">done</obj_property>
-         <obj_property name="ObjectShortName">done</obj_property>
-      </wvobject>
-      <wvobject fp_name="/dot_product_tb/DUT/load" type="logic">
-         <obj_property name="ElementShortName">load</obj_property>
-         <obj_property name="ObjectShortName">load</obj_property>
-      </wvobject>
-      <wvobject fp_name="/dot_product_tb/DUT/cnt_zero" type="logic">
-         <obj_property name="ElementShortName">cnt_zero</obj_property>
-         <obj_property name="ObjectShortName">cnt_zero</obj_property>
-      </wvobject>
-      <wvobject fp_name="/dot_product_tb/DUT/en" type="logic">
-         <obj_property name="ElementShortName">en</obj_property>
-         <obj_property name="ObjectShortName">en</obj_property>
-      </wvobject>
-      <wvobject fp_name="/dot_product_tb/DUT/down" type="logic">
-         <obj_property name="ElementShortName">down</obj_property>
-         <obj_property name="ObjectShortName">down</obj_property>
-      </wvobject>
-      <wvobject fp_name="/dot_product_tb/DUT/WIDTH" type="array">
-         <obj_property name="ElementShortName">WIDTH[31:0]</obj_property>
-         <obj_property name="ObjectShortName">WIDTH[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/dot_product_tb/DUT/DEPTH" type="array">
-         <obj_property name="ElementShortName">DEPTH[31:0]</obj_property>
-         <obj_property name="ObjectShortName">DEPTH[31:0]</obj_property>
-      </wvobject>
+   <wvobject fp_name="/dot_product_tb/errors" type="array">
+      <obj_property name="ElementShortName">errors[31:0]</obj_property>
+      <obj_property name="ObjectShortName">errors[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dot_product_tb/ExpectedR" type="array">
+      <obj_property name="ElementShortName">ExpectedR[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ExpectedR[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dot_product_tb/ExpectedRn" type="array">
+      <obj_property name="ElementShortName">ExpectedRn[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ExpectedRn[3:0]</obj_property>
    </wvobject>
    <wvobject fp_name="group51" type="group">
       <obj_property name="label">DP</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="group95" type="group">
          <obj_property name="label">LOAD</obj_property>
          <obj_property name="DisplayName">label</obj_property>
@@ -126,7 +79,6 @@
          <wvobject fp_name="group87" type="group">
             <obj_property name="label">counter</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <obj_property name="isExpanded"></obj_property>
             <wvobject fp_name="/dot_product_tb/DUT/DP/counter/load" type="logic">
                <obj_property name="ElementShortName">load</obj_property>
                <obj_property name="ObjectShortName">load</obj_property>
@@ -144,12 +96,12 @@
                <obj_property name="ObjectShortName">rst</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/counter/d" type="array">
-               <obj_property name="ElementShortName">d[2:0]</obj_property>
-               <obj_property name="ObjectShortName">d[2:0]</obj_property>
+               <obj_property name="ElementShortName">d[3:0]</obj_property>
+               <obj_property name="ObjectShortName">d[3:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/counter/q" type="array">
-               <obj_property name="ElementShortName">q[2:0]</obj_property>
-               <obj_property name="ObjectShortName">q[2:0]</obj_property>
+               <obj_property name="ElementShortName">q[3:0]</obj_property>
+               <obj_property name="ObjectShortName">q[3:0]</obj_property>
                <obj_property name="isExpanded"></obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/counter/WIDTH" type="array">
@@ -177,20 +129,20 @@
                <obj_property name="ObjectShortName">load</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/transposerAn/sel" type="array">
-               <obj_property name="ElementShortName">sel[2:0]</obj_property>
-               <obj_property name="ObjectShortName">sel[2:0]</obj_property>
+               <obj_property name="ElementShortName">sel[3:0]</obj_property>
+               <obj_property name="ObjectShortName">sel[3:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/transposerAn/d" type="array">
-               <obj_property name="ElementShortName">d[1:0][2:0]</obj_property>
-               <obj_property name="ObjectShortName">d[1:0][2:0]</obj_property>
+               <obj_property name="ElementShortName">d[1:0][3:0]</obj_property>
+               <obj_property name="ObjectShortName">d[1:0][3:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/transposerAn/q" type="array">
                <obj_property name="ElementShortName">q[1:0]</obj_property>
                <obj_property name="ObjectShortName">q[1:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/transposerAn/temp" type="array">
-               <obj_property name="ElementShortName">temp[2:0][1:0]</obj_property>
-               <obj_property name="ObjectShortName">temp[2:0][1:0]</obj_property>
+               <obj_property name="ElementShortName">temp[3:0][1:0]</obj_property>
+               <obj_property name="ObjectShortName">temp[3:0][1:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/transposerAn/i" type="array">
                <obj_property name="ElementShortName">i[31:0]</obj_property>
@@ -225,20 +177,20 @@
                <obj_property name="ObjectShortName">load</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/transposerA/sel" type="array">
-               <obj_property name="ElementShortName">sel[2:0]</obj_property>
-               <obj_property name="ObjectShortName">sel[2:0]</obj_property>
+               <obj_property name="ElementShortName">sel[3:0]</obj_property>
+               <obj_property name="ObjectShortName">sel[3:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/transposerA/d" type="array">
-               <obj_property name="ElementShortName">d[1:0][2:0]</obj_property>
-               <obj_property name="ObjectShortName">d[1:0][2:0]</obj_property>
+               <obj_property name="ElementShortName">d[1:0][3:0]</obj_property>
+               <obj_property name="ObjectShortName">d[1:0][3:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/transposerA/q" type="array">
                <obj_property name="ElementShortName">q[1:0]</obj_property>
                <obj_property name="ObjectShortName">q[1:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/transposerA/temp" type="array">
-               <obj_property name="ElementShortName">temp[2:0][1:0]</obj_property>
-               <obj_property name="ObjectShortName">temp[2:0][1:0]</obj_property>
+               <obj_property name="ElementShortName">temp[3:0][1:0]</obj_property>
+               <obj_property name="ObjectShortName">temp[3:0][1:0]</obj_property>
                <obj_property name="isExpanded"></obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/transposerA/i" type="array">
@@ -270,12 +222,12 @@
                <obj_property name="ObjectShortName">load</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/regB/d" type="array">
-               <obj_property name="ElementShortName">d[1:0][2:0]</obj_property>
-               <obj_property name="ObjectShortName">d[1:0][2:0]</obj_property>
+               <obj_property name="ElementShortName">d[1:0][3:0]</obj_property>
+               <obj_property name="ObjectShortName">d[1:0][3:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/regB/q" type="array">
-               <obj_property name="ElementShortName">q[1:0][2:0]</obj_property>
-               <obj_property name="ObjectShortName">q[1:0][2:0]</obj_property>
+               <obj_property name="ElementShortName">q[1:0][3:0]</obj_property>
+               <obj_property name="ObjectShortName">q[1:0][3:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/regB/i" type="array">
                <obj_property name="ElementShortName">i[31:0]</obj_property>
@@ -299,16 +251,16 @@
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="isExpanded"></obj_property>
             <wvobject fp_name="/dot_product_tb/DUT/DP/A0B/a" type="array">
-               <obj_property name="ElementShortName">a[2:0]</obj_property>
-               <obj_property name="ObjectShortName">a[2:0]</obj_property>
+               <obj_property name="ElementShortName">a[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a[3:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/A0B/b" type="array">
-               <obj_property name="ElementShortName">b[2:0]</obj_property>
-               <obj_property name="ObjectShortName">b[2:0]</obj_property>
+               <obj_property name="ElementShortName">b[3:0]</obj_property>
+               <obj_property name="ObjectShortName">b[3:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/A0B/y" type="array">
-               <obj_property name="ElementShortName">y[2:0]</obj_property>
-               <obj_property name="ObjectShortName">y[2:0]</obj_property>
+               <obj_property name="ElementShortName">y[3:0]</obj_property>
+               <obj_property name="ObjectShortName">y[3:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/A0B/WIDTH" type="array">
                <obj_property name="ElementShortName">WIDTH[31:0]</obj_property>
@@ -320,16 +272,16 @@
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="isExpanded"></obj_property>
             <wvobject fp_name="/dot_product_tb/DUT/DP/A1B/a" type="array">
-               <obj_property name="ElementShortName">a[2:0]</obj_property>
-               <obj_property name="ObjectShortName">a[2:0]</obj_property>
+               <obj_property name="ElementShortName">a[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a[3:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/A1B/b" type="array">
-               <obj_property name="ElementShortName">b[2:0]</obj_property>
-               <obj_property name="ObjectShortName">b[2:0]</obj_property>
+               <obj_property name="ElementShortName">b[3:0]</obj_property>
+               <obj_property name="ObjectShortName">b[3:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/A1B/y" type="array">
-               <obj_property name="ElementShortName">y[2:0]</obj_property>
-               <obj_property name="ObjectShortName">y[2:0]</obj_property>
+               <obj_property name="ElementShortName">y[3:0]</obj_property>
+               <obj_property name="ObjectShortName">y[3:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/A1B/WIDTH" type="array">
                <obj_property name="ElementShortName">WIDTH[31:0]</obj_property>
@@ -340,16 +292,16 @@
             <obj_property name="label">An0B</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <wvobject fp_name="/dot_product_tb/DUT/DP/An0B/a" type="array">
-               <obj_property name="ElementShortName">a[2:0]</obj_property>
-               <obj_property name="ObjectShortName">a[2:0]</obj_property>
+               <obj_property name="ElementShortName">a[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a[3:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/An0B/b" type="array">
-               <obj_property name="ElementShortName">b[2:0]</obj_property>
-               <obj_property name="ObjectShortName">b[2:0]</obj_property>
+               <obj_property name="ElementShortName">b[3:0]</obj_property>
+               <obj_property name="ObjectShortName">b[3:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/An0B/y" type="array">
-               <obj_property name="ElementShortName">y[2:0]</obj_property>
-               <obj_property name="ObjectShortName">y[2:0]</obj_property>
+               <obj_property name="ElementShortName">y[3:0]</obj_property>
+               <obj_property name="ObjectShortName">y[3:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/An0B/WIDTH" type="array">
                <obj_property name="ElementShortName">WIDTH[31:0]</obj_property>
@@ -361,16 +313,16 @@
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="isExpanded"></obj_property>
             <wvobject fp_name="/dot_product_tb/DUT/DP/An1B/a" type="array">
-               <obj_property name="ElementShortName">a[2:0]</obj_property>
-               <obj_property name="ObjectShortName">a[2:0]</obj_property>
+               <obj_property name="ElementShortName">a[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a[3:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/An1B/b" type="array">
-               <obj_property name="ElementShortName">b[2:0]</obj_property>
-               <obj_property name="ObjectShortName">b[2:0]</obj_property>
+               <obj_property name="ElementShortName">b[3:0]</obj_property>
+               <obj_property name="ObjectShortName">b[3:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/An1B/y" type="array">
-               <obj_property name="ElementShortName">y[2:0]</obj_property>
-               <obj_property name="ObjectShortName">y[2:0]</obj_property>
+               <obj_property name="ElementShortName">y[3:0]</obj_property>
+               <obj_property name="ObjectShortName">y[3:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/An1B/WIDTH" type="array">
                <obj_property name="ElementShortName">WIDTH[31:0]</obj_property>
@@ -386,16 +338,16 @@
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="isExpanded"></obj_property>
             <wvobject fp_name="/dot_product_tb/DUT/DP/AaddB/a" type="array">
-               <obj_property name="ElementShortName">a[2:0]</obj_property>
-               <obj_property name="ObjectShortName">a[2:0]</obj_property>
+               <obj_property name="ElementShortName">a[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a[3:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/AaddB/b" type="array">
-               <obj_property name="ElementShortName">b[2:0]</obj_property>
-               <obj_property name="ObjectShortName">b[2:0]</obj_property>
+               <obj_property name="ElementShortName">b[3:0]</obj_property>
+               <obj_property name="ObjectShortName">b[3:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/AaddB/y" type="array">
-               <obj_property name="ElementShortName">y[2:0]</obj_property>
-               <obj_property name="ObjectShortName">y[2:0]</obj_property>
+               <obj_property name="ElementShortName">y[3:0]</obj_property>
+               <obj_property name="ObjectShortName">y[3:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/AaddB/WIDTH" type="array">
                <obj_property name="ElementShortName">WIDTH[31:0]</obj_property>
@@ -406,16 +358,16 @@
             <obj_property name="label">AnaddB</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <wvobject fp_name="/dot_product_tb/DUT/DP/AnaddB/a" type="array">
-               <obj_property name="ElementShortName">a[2:0]</obj_property>
-               <obj_property name="ObjectShortName">a[2:0]</obj_property>
+               <obj_property name="ElementShortName">a[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a[3:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/AnaddB/b" type="array">
-               <obj_property name="ElementShortName">b[2:0]</obj_property>
-               <obj_property name="ObjectShortName">b[2:0]</obj_property>
+               <obj_property name="ElementShortName">b[3:0]</obj_property>
+               <obj_property name="ObjectShortName">b[3:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/AnaddB/y" type="array">
-               <obj_property name="ElementShortName">y[2:0]</obj_property>
-               <obj_property name="ObjectShortName">y[2:0]</obj_property>
+               <obj_property name="ElementShortName">y[3:0]</obj_property>
+               <obj_property name="ObjectShortName">y[3:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/AnaddB/WIDTH" type="array">
                <obj_property name="ElementShortName">WIDTH[31:0]</obj_property>
@@ -426,16 +378,16 @@
             <obj_property name="label">ABR</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <wvobject fp_name="/dot_product_tb/DUT/DP/ABR/a" type="array">
-               <obj_property name="ElementShortName">a[2:0]</obj_property>
-               <obj_property name="ObjectShortName">a[2:0]</obj_property>
+               <obj_property name="ElementShortName">a[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a[3:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/ABR/b" type="array">
-               <obj_property name="ElementShortName">b[2:0]</obj_property>
-               <obj_property name="ObjectShortName">b[2:0]</obj_property>
+               <obj_property name="ElementShortName">b[3:0]</obj_property>
+               <obj_property name="ObjectShortName">b[3:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/ABR/y" type="array">
-               <obj_property name="ElementShortName">y[2:0]</obj_property>
-               <obj_property name="ObjectShortName">y[2:0]</obj_property>
+               <obj_property name="ElementShortName">y[3:0]</obj_property>
+               <obj_property name="ObjectShortName">y[3:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/ABR/WIDTH" type="array">
                <obj_property name="ElementShortName">WIDTH[31:0]</obj_property>
@@ -446,16 +398,16 @@
             <obj_property name="label">AnBR</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <wvobject fp_name="/dot_product_tb/DUT/DP/AnBR/a" type="array">
-               <obj_property name="ElementShortName">a[2:0]</obj_property>
-               <obj_property name="ObjectShortName">a[2:0]</obj_property>
+               <obj_property name="ElementShortName">a[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a[3:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/AnBR/b" type="array">
-               <obj_property name="ElementShortName">b[2:0]</obj_property>
-               <obj_property name="ObjectShortName">b[2:0]</obj_property>
+               <obj_property name="ElementShortName">b[3:0]</obj_property>
+               <obj_property name="ObjectShortName">b[3:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/AnBR/y" type="array">
-               <obj_property name="ElementShortName">y[2:0]</obj_property>
-               <obj_property name="ObjectShortName">y[2:0]</obj_property>
+               <obj_property name="ElementShortName">y[3:0]</obj_property>
+               <obj_property name="ObjectShortName">y[3:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/AnBR/WIDTH" type="array">
                <obj_property name="ElementShortName">WIDTH[31:0]</obj_property>
@@ -481,12 +433,12 @@
                   <obj_property name="ObjectShortName">load</obj_property>
                </wvobject>
                <wvobject fp_name="/dot_product_tb/DUT/DP/regAB/d" type="array">
-                  <obj_property name="ElementShortName">d[0:0][2:0]</obj_property>
-                  <obj_property name="ObjectShortName">d[0:0][2:0]</obj_property>
+                  <obj_property name="ElementShortName">d[0:0][3:0]</obj_property>
+                  <obj_property name="ObjectShortName">d[0:0][3:0]</obj_property>
                </wvobject>
                <wvobject fp_name="/dot_product_tb/DUT/DP/regAB/q" type="array">
-                  <obj_property name="ElementShortName">q[0:0][2:0]</obj_property>
-                  <obj_property name="ObjectShortName">q[0:0][2:0]</obj_property>
+                  <obj_property name="ElementShortName">q[0:0][3:0]</obj_property>
+                  <obj_property name="ObjectShortName">q[0:0][3:0]</obj_property>
                </wvobject>
                <wvobject fp_name="/dot_product_tb/DUT/DP/regAB/i" type="array">
                   <obj_property name="ElementShortName">i[31:0]</obj_property>
@@ -517,12 +469,12 @@
                   <obj_property name="ObjectShortName">load</obj_property>
                </wvobject>
                <wvobject fp_name="/dot_product_tb/DUT/DP/regAnB/d" type="array">
-                  <obj_property name="ElementShortName">d[0:0][2:0]</obj_property>
-                  <obj_property name="ObjectShortName">d[0:0][2:0]</obj_property>
+                  <obj_property name="ElementShortName">d[0:0][3:0]</obj_property>
+                  <obj_property name="ObjectShortName">d[0:0][3:0]</obj_property>
                </wvobject>
                <wvobject fp_name="/dot_product_tb/DUT/DP/regAnB/q" type="array">
-                  <obj_property name="ElementShortName">q[0:0][2:0]</obj_property>
-                  <obj_property name="ObjectShortName">q[0:0][2:0]</obj_property>
+                  <obj_property name="ElementShortName">q[0:0][3:0]</obj_property>
+                  <obj_property name="ObjectShortName">q[0:0][3:0]</obj_property>
                </wvobject>
                <wvobject fp_name="/dot_product_tb/DUT/DP/regAnB/i" type="array">
                   <obj_property name="ElementShortName">i[31:0]</obj_property>
@@ -551,16 +503,16 @@
                <obj_property name="ObjectShortName">sel</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/muxR/a" type="array">
-               <obj_property name="ElementShortName">a[2:0]</obj_property>
-               <obj_property name="ObjectShortName">a[2:0]</obj_property>
+               <obj_property name="ElementShortName">a[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a[3:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/muxR/b" type="array">
-               <obj_property name="ElementShortName">b[2:0]</obj_property>
-               <obj_property name="ObjectShortName">b[2:0]</obj_property>
+               <obj_property name="ElementShortName">b[3:0]</obj_property>
+               <obj_property name="ObjectShortName">b[3:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/muxR/y" type="array">
-               <obj_property name="ElementShortName">y[2:0]</obj_property>
-               <obj_property name="ObjectShortName">y[2:0]</obj_property>
+               <obj_property name="ElementShortName">y[3:0]</obj_property>
+               <obj_property name="ObjectShortName">y[3:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/muxR/WIDTH" type="array">
                <obj_property name="ElementShortName">WIDTH[31:0]</obj_property>
@@ -576,22 +528,82 @@
                <obj_property name="ObjectShortName">sel</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/muxRn/a" type="array">
-               <obj_property name="ElementShortName">a[2:0]</obj_property>
-               <obj_property name="ObjectShortName">a[2:0]</obj_property>
+               <obj_property name="ElementShortName">a[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a[3:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/muxRn/b" type="array">
-               <obj_property name="ElementShortName">b[2:0]</obj_property>
-               <obj_property name="ObjectShortName">b[2:0]</obj_property>
+               <obj_property name="ElementShortName">b[3:0]</obj_property>
+               <obj_property name="ObjectShortName">b[3:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/muxRn/y" type="array">
-               <obj_property name="ElementShortName">y[2:0]</obj_property>
-               <obj_property name="ObjectShortName">y[2:0]</obj_property>
+               <obj_property name="ElementShortName">y[3:0]</obj_property>
+               <obj_property name="ObjectShortName">y[3:0]</obj_property>
             </wvobject>
             <wvobject fp_name="/dot_product_tb/DUT/DP/muxRn/WIDTH" type="array">
                <obj_property name="ElementShortName">WIDTH[31:0]</obj_property>
                <obj_property name="ObjectShortName">WIDTH[31:0]</obj_property>
             </wvobject>
          </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group35" type="group">
+      <obj_property name="label">CU</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/dot_product_tb/DUT/A" type="array">
+         <obj_property name="ElementShortName">A[1:0][3:0]</obj_property>
+         <obj_property name="ObjectShortName">A[1:0][3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dot_product_tb/DUT/An" type="array">
+         <obj_property name="ElementShortName">An[1:0][3:0]</obj_property>
+         <obj_property name="ObjectShortName">An[1:0][3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dot_product_tb/DUT/B" type="array">
+         <obj_property name="ElementShortName">B[1:0][3:0]</obj_property>
+         <obj_property name="ObjectShortName">B[1:0][3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dot_product_tb/DUT/go" type="logic">
+         <obj_property name="ElementShortName">go</obj_property>
+         <obj_property name="ObjectShortName">go</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dot_product_tb/DUT/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dot_product_tb/DUT/R" type="array">
+         <obj_property name="ElementShortName">R[3:0]</obj_property>
+         <obj_property name="ObjectShortName">R[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dot_product_tb/DUT/Rn" type="array">
+         <obj_property name="ElementShortName">Rn[3:0]</obj_property>
+         <obj_property name="ObjectShortName">Rn[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dot_product_tb/DUT/done" type="logic">
+         <obj_property name="ElementShortName">done</obj_property>
+         <obj_property name="ObjectShortName">done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dot_product_tb/DUT/load" type="logic">
+         <obj_property name="ElementShortName">load</obj_property>
+         <obj_property name="ObjectShortName">load</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dot_product_tb/DUT/cnt_zero" type="logic">
+         <obj_property name="ElementShortName">cnt_zero</obj_property>
+         <obj_property name="ObjectShortName">cnt_zero</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dot_product_tb/DUT/en" type="logic">
+         <obj_property name="ElementShortName">en</obj_property>
+         <obj_property name="ObjectShortName">en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dot_product_tb/DUT/down" type="logic">
+         <obj_property name="ElementShortName">down</obj_property>
+         <obj_property name="ObjectShortName">down</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dot_product_tb/DUT/WIDTH" type="array">
+         <obj_property name="ElementShortName">WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dot_product_tb/DUT/DEPTH" type="array">
+         <obj_property name="ElementShortName">DEPTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DEPTH[31:0]</obj_property>
       </wvobject>
    </wvobject>
    <wvobject fp_name="group257" type="group">
@@ -610,12 +622,12 @@
          <obj_property name="ObjectShortName">load</obj_property>
       </wvobject>
       <wvobject fp_name="/dot_product_tb/DUT/DP/regAB/d" type="array">
-         <obj_property name="ElementShortName">d[0:0][2:0]</obj_property>
-         <obj_property name="ObjectShortName">d[0:0][2:0]</obj_property>
+         <obj_property name="ElementShortName">d[0:0][3:0]</obj_property>
+         <obj_property name="ObjectShortName">d[0:0][3:0]</obj_property>
       </wvobject>
       <wvobject fp_name="/dot_product_tb/DUT/DP/regAB/q" type="array">
-         <obj_property name="ElementShortName">q[0:0][2:0]</obj_property>
-         <obj_property name="ObjectShortName">q[0:0][2:0]</obj_property>
+         <obj_property name="ElementShortName">q[0:0][3:0]</obj_property>
+         <obj_property name="ObjectShortName">q[0:0][3:0]</obj_property>
       </wvobject>
       <wvobject fp_name="/dot_product_tb/DUT/DP/regAB/i" type="array">
          <obj_property name="ElementShortName">i[31:0]</obj_property>
