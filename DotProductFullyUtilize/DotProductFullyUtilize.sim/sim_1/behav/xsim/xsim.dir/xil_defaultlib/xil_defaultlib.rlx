@@ -1,0 +1,16 @@
+0.6
+2019.1
+Sep  4 2019
+09:57:52
+C:/Users/phatle/DotProductFullyUtilize/DotProductFullyUtilize.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/Users/phatle/DotProductFullyUtilize/DotProductFullyUtilize.srcs/sim_1/imports/new/BSI_processor_tb.v,1601481520,systemVerilog,,,,BSI_processor_tb,,,,,,,,
+C:/Users/phatle/DotProductFullyUtilize/DotProductFullyUtilize.srcs/sim_1/new/DotProduct1Bit_tb.v,1601483521,systemVerilog,,,,DotProduct1Bit_tb,,,,,,,,
+C:/Users/phatle/DotProductFullyUtilize/DotProductFullyUtilize.srcs/sim_1/new/dot_product_top_tb.v,1601487730,systemVerilog,,,,dot_product_top_tb,,,,,,,,
+C:/Users/phatle/DotProductFullyUtilize/DotProductFullyUtilize.srcs/sim_1/new/transposer_tb.v,1601484268,systemVerilog,,,,transposer_tb,,,,,,,,
+C:/Users/phatle/DotProductFullyUtilize/DotProductFullyUtilize.srcs/sources_1/imports/new/AND.v,1598827363,verilog,,C:/Users/phatle/DotProductFullyUtilize/DotProductFullyUtilize.srcs/sources_1/imports/new/shifter.v,,AND,,,,,,,,
+C:/Users/phatle/DotProductFullyUtilize/DotProductFullyUtilize.srcs/sources_1/imports/new/combine.v,1601483343,systemVerilog,,C:/Users/phatle/DotProductFullyUtilize/DotProductFullyUtilize.srcs/sources_1/imports/new/dot_product_top.v,,combine,,,,,,,,
+C:/Users/phatle/DotProductFullyUtilize/DotProductFullyUtilize.srcs/sources_1/imports/new/dot_product_top.v,1601487140,systemVerilog,,C:/Users/phatle/DotProductFullyUtilize/DotProductFullyUtilize.srcs/sources_1/imports/new/transposer.v,,dot_product_top,,,,,,,,
+C:/Users/phatle/DotProductFullyUtilize/DotProductFullyUtilize.srcs/sources_1/imports/new/shifter.v,1601423860,verilog,,,,shifter,,,,,,,,
+C:/Users/phatle/DotProductFullyUtilize/DotProductFullyUtilize.srcs/sources_1/imports/new/transposer.v,1601423493,systemVerilog,,C:/Users/phatle/DotProductFullyUtilize/DotProductFullyUtilize.srcs/sim_1/new/dot_product_top_tb.v,,transposer,,,,,,,,
+C:/Users/phatle/DotProductFullyUtilize/DotProductFullyUtilize.srcs/sources_1/new/DotProduct1Bit.v,1601415881,systemVerilog,,C:/Users/phatle/DotProductFullyUtilize/DotProductFullyUtilize.srcs/sources_1/new/ShiftValueArray.v,,DotProduct1Bit,,,,,,,,
+C:/Users/phatle/DotProductFullyUtilize/DotProductFullyUtilize.srcs/sources_1/new/ShiftValueArray.v,1601485204,systemVerilog,,C:/Users/phatle/DotProductFullyUtilize/DotProductFullyUtilize.srcs/sources_1/imports/new/combine.v,,ShiftValueArray,,,,,,,,
