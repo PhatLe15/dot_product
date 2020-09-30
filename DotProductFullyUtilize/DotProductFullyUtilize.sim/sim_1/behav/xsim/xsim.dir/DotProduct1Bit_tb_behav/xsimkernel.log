@@ -1,0 +1,7 @@
+Running: xsim.dir/DotProduct1Bit_tb_behav/xsimk.exe -simmode gui -wdb DotProduct1Bit_tb_behav.wdb -simrunnum 0 -socket 52117
+Design successfully loaded
+Design Loading Memory Usage: 5204 KB (Peak: 5204 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 5868 KB (Peak: 5868 KB)
+Simulation CPU Usage: 46 ms

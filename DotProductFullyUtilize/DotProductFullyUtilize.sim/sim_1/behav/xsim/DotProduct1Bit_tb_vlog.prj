@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../DotProductFullyUtilize.srcs/sources_1/imports/new/AND.v" \
+
+sv xil_defaultlib  \
+"../../../../DotProductFullyUtilize.srcs/sources_1/new/DotProduct1Bit.v" \
+"../../../../DotProductFullyUtilize.srcs/sources_1/imports/new/combine.v" \
+"../../../../DotProductFullyUtilize.srcs/sim_1/new/DotProduct1Bit_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
