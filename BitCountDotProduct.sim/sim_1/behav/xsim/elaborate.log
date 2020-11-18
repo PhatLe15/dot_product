@@ -1,0 +1,68 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto de86b6d69da64e3f8b9c0d0080e7181d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dot_product_tb_behav xil_defaultlib.dot_product_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/AND.v" Line 1. Module AND(WIDTH=8) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/AND.v" Line 1. Module AND(WIDTH=8) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/AND.v" Line 1. Module AND(WIDTH=8) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/AND.v" Line 1. Module AND(WIDTH=8) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/AND.v" Line 1. Module AND(WIDTH=8) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/AND.v" Line 1. Module AND(WIDTH=8) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/AND.v" Line 1. Module AND(WIDTH=8) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/AND.v" Line 1. Module AND(WIDTH=8) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/AND.v" Line 1. Module AND(WIDTH=8) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/AND.v" Line 1. Module AND(WIDTH=8) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/AND.v" Line 1. Module AND(WIDTH=8) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/AND.v" Line 1. Module AND(WIDTH=8) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/AND.v" Line 1. Module AND(WIDTH=8) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/AND.v" Line 1. Module AND(WIDTH=8) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/AND.v" Line 1. Module AND(WIDTH=8) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/AND.v" Line 1. Module AND(WIDTH=8) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/AND.v" Line 1. Module AND(WIDTH=8) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/AND.v" Line 1. Module AND(WIDTH=8) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/AND.v" Line 1. Module AND(WIDTH=8) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/AND.v" Line 1. Module AND(WIDTH=8) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/AND.v" Line 1. Module AND(WIDTH=8) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/AND.v" Line 1. Module AND(WIDTH=8) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/AND.v" Line 1. Module AND(WIDTH=8) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/AND.v" Line 1. Module AND(WIDTH=8) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/AND.v" Line 1. Module AND(WIDTH=8) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/AND.v" Line 1. Module AND(WIDTH=8) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/AND.v" Line 1. Module AND(WIDTH=8) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/AND.v" Line 1. Module AND(WIDTH=8) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/AND.v" Line 1. Module AND(WIDTH=8) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/AND.v" Line 1. Module AND(WIDTH=8) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/AND.v" Line 1. Module AND(WIDTH=8) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/AND.v" Line 1. Module AND(WIDTH=8) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dmem
+Compiling module xil_defaultlib.dmemB
+Compiling module xil_defaultlib.ddreg
+Compiling module xil_defaultlib.adder(WIDTH=32)
+Compiling module xil_defaultlib.imem
+Compiling module xil_defaultlib.InstructionMem
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.transposer
+Compiling module xil_defaultlib.inputBuffer
+Compiling module xil_defaultlib.AindexArray
+Compiling module xil_defaultlib.dreg(WIDTH=5)
+Compiling module xil_defaultlib.AindexSelector
+Compiling module xil_defaultlib.ShiftValueArray
+Compiling module xil_defaultlib.shiftValue
+Compiling module xil_defaultlib.MUX32
+Compiling module xil_defaultlib.AND(WIDTH=8)
+Compiling module xil_defaultlib.bitCounter
+Compiling module xil_defaultlib.shifter
+Compiling module xil_defaultlib.DotProduct1bit
+Compiling module xil_defaultlib.combine(DEPTH=32)
+Compiling module xil_defaultlib.outputBuffer
+Compiling module xil_defaultlib.mux2(WIDTH=32)
+Compiling module xil_defaultlib.DataPath_default
+Compiling module xil_defaultlib.dot_product_top
+Compiling module xil_defaultlib.dot_product_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dot_product_tb_behav

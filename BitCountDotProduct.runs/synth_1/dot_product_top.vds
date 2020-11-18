@@ -1,0 +1,771 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.3 (64-bit)
+# SW Build 2644227 on Wed Sep  4 09:45:24 MDT 2019
+# IP Build 2633630 on Wed Sep  4 12:30:14 MDT 2019
+# Start of session at: Wed Nov 18 10:03:59 2020
+# Process ID: 9952
+# Current directory: C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.runs/synth_1
+# Command line: vivado.exe -log dot_product_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dot_product_top.tcl
+# Log file: C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.runs/synth_1/dot_product_top.vds
+# Journal file: C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source dot_product_top.tcl -notrace
+Command: synth_design -top dot_product_top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10428 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 443.102 ; gain = 189.914
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'dot_product_top' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/new/dot_product_top.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter DEPTH bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'dmem' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/new/dmem.v:23]
+INFO: [Synth 8-3876] $readmem data file 'conv1-o.dat' is read successfully [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/new/dmem.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'dmem' (1#1) [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/new/dmem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dmemB' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/new/dmemB.v:23]
+INFO: [Synth 8-3876] $readmem data file 'input-o.dat' is read successfully [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/new/dmemB.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'dmemB' (2#1) [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/new/dmemB.v:23]
+INFO: [Synth 8-6157] synthesizing module 'InstructionMem' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/new/InstructionMem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ddreg' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/new/dreg.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ddreg' (3#1) [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/new/dreg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/datapath/adder.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'adder' (4#1) [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/datapath/adder.v:1]
+INFO: [Synth 8-6157] synthesizing module 'imem' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/new/imem.v:1]
+INFO: [Synth 8-3876] $readmem data file 'memFile.dat' is read successfully [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/new/imem.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'imem' (5#1) [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/new/imem.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'InstructionMem' (6#1) [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/new/InstructionMem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ControlUnit' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/ControlUnit.v:23]
+WARNING: [Synth 8-3848] Net down in module/entity ControlUnit does not have driver. [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/ControlUnit.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'ControlUnit' (7#1) [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/ControlUnit.v:23]
+WARNING: [Synth 8-7023] instance 'CU' of module 'ControlUnit' has 6 connections declared, but only 5 given [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/new/dot_product_top.v:57]
+INFO: [Synth 8-6157] synthesizing module 'DataPath' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/new/DataPath.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter DEPTH bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'DotProduct1bit' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/DotProduct1bit.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter DEPTH bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'MUX32' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/new/MUX4.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter DEPTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MUX32' (8#1) [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/new/MUX4.v:23]
+INFO: [Synth 8-6157] synthesizing module 'AND' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/AND.v:1]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND' (9#1) [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/AND.v:1]
+INFO: [Synth 8-6157] synthesizing module 'bitCounter' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/bitCounter.v:23]
+	Parameter DEPTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'bitCounter' (10#1) [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/bitCounter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'shifter' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/shifter.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shifter' (11#1) [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/shifter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'DotProduct1bit' (12#1) [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/DotProduct1bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'inputBuffer' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/inputBuffer.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter DEPTH bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'transposer' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/transposer.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter DEPTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'transposer' (13#1) [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/transposer.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'inputBuffer' (14#1) [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/inputBuffer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'AindexSelector' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/AindexSelector.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'AindexArray' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/AindexArray.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+WARNING: [Synth 8-324] index 32 out of range [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/AindexArray.v:34]
+WARNING: [Synth 8-324] index 33 out of range [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/AindexArray.v:35]
+WARNING: [Synth 8-324] index 34 out of range [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/AindexArray.v:36]
+WARNING: [Synth 8-324] index 35 out of range [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/AindexArray.v:37]
+WARNING: [Synth 8-324] index 36 out of range [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/AindexArray.v:38]
+WARNING: [Synth 8-324] index 37 out of range [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/AindexArray.v:39]
+WARNING: [Synth 8-324] index 38 out of range [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/AindexArray.v:40]
+WARNING: [Synth 8-324] index 39 out of range [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/AindexArray.v:41]
+WARNING: [Synth 8-324] index 40 out of range [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/AindexArray.v:42]
+WARNING: [Synth 8-324] index 41 out of range [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/AindexArray.v:43]
+WARNING: [Synth 8-324] index 42 out of range [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/AindexArray.v:44]
+WARNING: [Synth 8-324] index 43 out of range [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/AindexArray.v:45]
+WARNING: [Synth 8-324] index 44 out of range [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/AindexArray.v:46]
+WARNING: [Synth 8-324] index 45 out of range [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/AindexArray.v:47]
+WARNING: [Synth 8-324] index 46 out of range [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/AindexArray.v:48]
+WARNING: [Synth 8-324] index 47 out of range [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/AindexArray.v:49]
+WARNING: [Synth 8-324] index 48 out of range [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/AindexArray.v:50]
+WARNING: [Synth 8-324] index 49 out of range [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/AindexArray.v:51]
+WARNING: [Synth 8-324] index 50 out of range [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/AindexArray.v:52]
+WARNING: [Synth 8-324] index 51 out of range [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/AindexArray.v:53]
+WARNING: [Synth 8-324] index 52 out of range [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/AindexArray.v:54]
+WARNING: [Synth 8-324] index 53 out of range [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/AindexArray.v:55]
+WARNING: [Synth 8-324] index 54 out of range [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/AindexArray.v:56]
+WARNING: [Synth 8-324] index 55 out of range [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/AindexArray.v:57]
+WARNING: [Synth 8-324] index 56 out of range [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/AindexArray.v:58]
+WARNING: [Synth 8-324] index 57 out of range [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/AindexArray.v:59]
+WARNING: [Synth 8-324] index 58 out of range [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/AindexArray.v:60]
+WARNING: [Synth 8-324] index 59 out of range [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/AindexArray.v:61]
+WARNING: [Synth 8-324] index 60 out of range [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/AindexArray.v:62]
+WARNING: [Synth 8-324] index 61 out of range [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/AindexArray.v:63]
+WARNING: [Synth 8-324] index 62 out of range [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/AindexArray.v:64]
+WARNING: [Synth 8-324] index 63 out of range [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/AindexArray.v:65]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/AindexArray.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'AindexArray' (15#1) [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/AindexArray.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dreg' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/datapath/dreg.v:1]
+	Parameter WIDTH bound to: 5 - type: integer 
+	Parameter DEPTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dreg' (16#1) [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/datapath/dreg.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'AindexSelector' (17#1) [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/AindexSelector.v:23]
+INFO: [Synth 8-6157] synthesizing module 'shiftValue' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/shiftValue.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ShiftValueArray' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/new/ShiftValueArray.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/new/ShiftValueArray.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'ShiftValueArray' (18#1) [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/new/ShiftValueArray.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'shiftValue' (19#1) [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/shiftValue.v:23]
+INFO: [Synth 8-6157] synthesizing module 'combine' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/new/combine.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter DEPTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'combine' (20#1) [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/new/combine.v:23]
+INFO: [Synth 8-6157] synthesizing module 'outputBuffer' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/outputBuffer.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'outputBuffer' (21#1) [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/outputBuffer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/datapath/mux2.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (22#1) [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/datapath/mux2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'DataPath' (23#1) [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/new/DataPath.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'dot_product_top' (24#1) [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/new/dot_product_top.v:23]
+WARNING: [Synth 8-3331] design ControlUnit has unconnected port down
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 507.020 ; gain = 253.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 507.020 ; gain = 253.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 507.020 ; gain = 253.832
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-5546] ROM "rom" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "ctrl" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg[31]' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/new/AindexArray.v:34]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg[31]' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/new/ShiftValueArray.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg[30]' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/new/ShiftValueArray.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg[29]' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/new/ShiftValueArray.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg[28]' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/new/ShiftValueArray.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg[27]' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/new/ShiftValueArray.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg[26]' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/new/ShiftValueArray.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg[25]' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/new/ShiftValueArray.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg[24]' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/new/ShiftValueArray.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg[23]' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/new/ShiftValueArray.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg[22]' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/new/ShiftValueArray.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg[21]' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/new/ShiftValueArray.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg[20]' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/new/ShiftValueArray.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg[19]' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/new/ShiftValueArray.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg[18]' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/new/ShiftValueArray.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg[17]' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/new/ShiftValueArray.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg[16]' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/new/ShiftValueArray.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg[15]' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/new/ShiftValueArray.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg[14]' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/new/ShiftValueArray.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg[13]' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/new/ShiftValueArray.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg[12]' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/new/ShiftValueArray.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg[11]' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/new/ShiftValueArray.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg[10]' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/new/ShiftValueArray.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg[9]' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/new/ShiftValueArray.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg[8]' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/new/ShiftValueArray.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg[7]' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/new/ShiftValueArray.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg[6]' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/new/ShiftValueArray.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg[5]' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/new/ShiftValueArray.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg[4]' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/new/ShiftValueArray.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg[3]' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/new/ShiftValueArray.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg[2]' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/new/ShiftValueArray.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg[1]' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/new/ShiftValueArray.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg[0]' [C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.srcs/sources_1/imports/sources_1/imports/sources_1/new/ShiftValueArray.v:33]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 507.020 ; gain = 253.832
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	  32 Input     32 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 64    
+	   8 Input      4 Bit       Adders := 32    
++---Registers : 
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 64    
+	                5 Bit    Registers := 64    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 32    
+	   2 Input      5 Bit        Muxes := 64    
+	  36 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ddreg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module imem 
+Detailed RTL Component Info : 
++---Muxes : 
+	  36 Input      4 Bit        Muxes := 1     
+Module ControlUnit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+Module transposer 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 32    
+Module AindexArray 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module dreg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 32    
++---Registers : 
+	                5 Bit    Registers := 32    
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 32    
+	   2 Input      1 Bit        Muxes := 1     
+Module ShiftValueArray 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module combine 
+Detailed RTL Component Info : 
++---Adders : 
+	  32 Input     32 Bit       Adders := 1     
+Module outputBuffer 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mux2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module MUX32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module bitCounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   8 Input      4 Bit       Adders := 1     
+Module DataPath 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[29][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[29][1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[29][2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[29][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[29][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[28][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[28][1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[28][2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[28][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[28][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[27][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[27][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[27][2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[27][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[27][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[26][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[26][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[26][2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[26][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[26][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[25][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[25][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[25][2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[25][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[25][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[24][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[24][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[24][2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[24][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[24][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[23][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[23][1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[23][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[23][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[23][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[22][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[22][1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[22][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[22][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[22][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[21][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[21][1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[21][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[21][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[21][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[20][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[20][1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[20][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[20][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[20][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[19][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[19][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[19][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[19][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[19][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[18][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[18][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[18][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[18][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[18][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[17][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[17][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[17][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[17][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[17][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[16][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[16][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[16][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[16][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[16][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[15][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[15][1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[15][2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[15][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[15][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[14][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[14][1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[14][2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[14][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[14][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[13][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[13][1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[13][2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[13][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[13][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[12][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[12][1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[12][2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[12][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[12][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[11][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[11][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[11][2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[11][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[11][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[10][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[10][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[10][2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DP/\shiftArray/shiftArray/out_reg[10][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DP/\shiftArray/shiftArray/out_reg[10][4] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[29][0]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[29][1]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[29][2]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[29][3]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[29][4]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[29][5]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[29][6]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[29][7]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[28][0]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[28][1]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[28][2]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[28][3]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[28][4]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[28][5]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[28][6]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[28][7]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[27][0]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[27][1]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[27][2]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[27][3]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[27][4]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[27][5]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[27][6]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[27][7]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[26][0]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[26][1]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[26][2]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[26][3]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[26][4]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[26][5]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[26][6]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[26][7]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[25][0]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[25][1]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[25][2]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[25][3]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[25][4]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[25][5]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[25][6]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[25][7]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[24][0]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[24][1]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[24][2]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[24][3]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[24][4]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[24][5]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[24][6]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[24][7]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[23][0]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[23][1]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[23][2]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[23][3]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[23][4]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[23][5]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[23][6]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[23][7]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[22][0]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[22][1]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[22][2]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[22][3]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[22][4]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[22][5]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[22][6]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[22][7]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[21][0]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[21][1]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[21][2]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[21][3]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[21][4]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[21][5]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[21][6]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[21][7]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[20][0]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[20][1]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[20][2]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[20][3]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[20][4]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[20][5]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[20][6]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[20][7]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[19][0]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[19][1]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[19][2]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[19][3]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[19][4]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[19][5]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[19][6]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[19][7]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[18][0]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[18][1]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[18][2]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[18][3]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[18][4]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[18][5]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[18][6]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[18][7]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[17][0]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[17][1]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[17][2]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'DP/inputBuffer/transposerA/q_reg[17][3]' (FDCE) to 'DP/inputBuffer/transposerB/q_reg[1][0]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (AindexArray/indexArray/out_reg[31][4]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (AindexArray/indexArray/out_reg[31][3]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (AindexArray/indexArray/out_reg[31][2]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (AindexArray/indexArray/out_reg[31][1]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (AindexArray/indexArray/out_reg[31][0]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[31][4]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[31][3]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[31][2]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[31][1]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[31][0]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[30][4]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[30][3]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[30][2]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[30][1]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[30][0]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[29][4]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[29][3]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[29][2]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[29][1]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[29][0]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[28][4]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[28][3]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[28][2]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[28][1]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[28][0]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[27][4]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[27][3]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[27][2]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[27][1]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[27][0]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[26][4]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[26][3]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[26][2]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[26][1]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[26][0]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[25][4]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[25][3]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[25][2]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[25][1]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[25][0]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[24][4]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[24][3]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[24][2]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[24][1]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[24][0]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[23][4]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[23][3]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[23][2]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[23][1]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[23][0]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[22][4]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[22][3]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[22][2]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[22][1]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[22][0]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[21][4]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[21][3]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[21][2]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[21][1]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[21][0]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[20][4]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[20][3]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[20][2]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[20][1]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[20][0]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[19][4]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[19][3]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[19][2]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[19][1]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[19][0]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[18][4]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[18][3]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[18][2]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[18][1]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[18][0]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[17][4]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[17][3]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[17][2]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[17][1]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[17][0]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[16][4]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[16][3]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[16][2]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[16][1]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[16][0]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[15][4]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[15][3]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[15][2]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[15][1]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[15][0]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[14][4]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[14][3]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[14][2]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[14][1]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[14][0]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[13][4]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[13][3]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[13][2]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[13][1]) is unused and will be removed from module DataPath.
+WARNING: [Synth 8-3332] Sequential element (shiftArray/shiftArray/out_reg[13][0]) is unused and will be removed from module DataPath.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 730.988 ; gain = 477.801
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 730.988 ; gain = 477.801
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 751.379 ; gain = 498.191
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 751.379 ; gain = 498.191
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 751.379 ; gain = 498.191
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 751.379 ; gain = 498.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 751.379 ; gain = 498.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 751.379 ; gain = 498.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 751.379 ; gain = 498.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |   130|
+|3     |LUT1   |     1|
+|4     |LUT2   |    68|
+|5     |LUT3   |   322|
+|6     |LUT4   |   536|
+|7     |LUT5   |   227|
+|8     |LUT6   |  1184|
+|9     |FDCE   |   201|
+|10    |IBUF   |     2|
+|11    |OBUF   |    33|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------------+---------------+------+
+|      |Instance          |Module         |Cells |
++------+------------------+---------------+------+
+|1     |top               |               |  2705|
+|2     |  CU              |ControlUnit    |     3|
+|3     |  DP              |DataPath       |  2622|
+|4     |    AindexArray   |AindexSelector |    75|
+|5     |      indexA      |dreg_0         |    75|
+|6     |    combine       |combine        |   675|
+|7     |    inputBuffer   |inputBuffer    |     1|
+|8     |      transposerB |transposer     |     1|
+|9     |    muxR          |mux2           |    32|
+|10    |    outputBuffer  |outputBuffer   |    32|
+|11    |    shiftArray    |shiftValue     |  1799|
+|12    |      indexA      |dreg           |  1799|
+|13    |  imem            |InstructionMem |    44|
+|14    |    pc_reg        |ddreg          |    44|
++------+------------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 751.379 ; gain = 498.191
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 233 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 751.379 ; gain = 498.191
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 751.379 ; gain = 498.191
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 130 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 774.805 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+267 Infos, 168 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:43 . Memory (MB): peak = 774.805 ; gain = 536.684
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 774.805 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/phatle/BitCountDotProduct/BitCountDotProduct.runs/synth_1/dot_product_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file dot_product_top_utilization_synth.rpt -pb dot_product_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 18 10:05:29 2020...
