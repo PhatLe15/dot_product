@@ -1,0 +1,481 @@
+
+*** Running vivado
+    with args -log dot_product_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source dot_product_top.tcl
+
+
+****** Vivado v2019.1.3 (64-bit)
+  **** SW Build 2644227 on Wed Sep  4 09:45:24 MDT 2019
+  **** IP Build 2633630 on Wed Sep  4 12:30:14 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source dot_product_top.tcl -notrace
+Command: synth_design -top dot_product_top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5804 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 443.801 ; gain = 154.141
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'dot_product_top' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/dot_product_top.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter DEPTH bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Amem' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/new/dmem.v:23]
+INFO: [Synth 8-3876] $readmem data file 'conv1-o.dat' is read successfully [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/new/dmem.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'Amem' (1#1) [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/new/dmem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Bmem' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/new/dmemB.v:23]
+INFO: [Synth 8-3876] $readmem data file 'input-o.dat' is read successfully [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/new/dmemB.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'Bmem' (2#1) [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/new/dmemB.v:23]
+INFO: [Synth 8-6157] synthesizing module 'InstructionMem' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/new/InstructionMem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dreg' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/new/dreg.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dreg' (3#1) [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/new/dreg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/imports/datapath/adder.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'adder' (4#1) [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/imports/datapath/adder.v:1]
+INFO: [Synth 8-6157] synthesizing module 'imem' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/new/imem.v:1]
+INFO: [Synth 8-3876] $readmem data file 'memFile.dat' is read successfully [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/new/imem.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'imem' (5#1) [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/new/imem.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'InstructionMem' (6#1) [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/new/InstructionMem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ControlUnit' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/new/ControlUnit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ControlUnit' (7#1) [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/new/ControlUnit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DataPath' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/DataPath.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter DEPTH bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'AND' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/AND.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND' (8#1) [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/AND.v:1]
+INFO: [Synth 8-6157] synthesizing module 'transposer' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/transposer.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter DEPTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'transposer' (9#1) [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/transposer.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MUX8' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/new/MUX4.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter DEPTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MUX8' (10#1) [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/new/MUX4.v:23]
+INFO: [Synth 8-6157] synthesizing module 'breg' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/imports/datapath/dreg.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter DEPTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'breg' (11#1) [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/imports/datapath/dreg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'counter' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/counter.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter' (12#1) [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'combine' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/new/combine.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter DEPTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'combine' (13#1) [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/new/combine.v:23]
+INFO: [Synth 8-6157] synthesizing module 'breg__parameterized0' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/imports/datapath/dreg.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter DEPTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'breg__parameterized0' (13#1) [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/imports/datapath/dreg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'shifter' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/shifter.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shifter' (14#1) [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/shifter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/imports/datapath/mux2.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (15#1) [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/imports/datapath/mux2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'DataPath' (16#1) [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/DataPath.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'dot_product_top' (17#1) [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/dot_product_top.v:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 507.129 ; gain = 217.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 507.129 ; gain = 217.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 507.129 ; gain = 217.469
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "rom" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "ctrl" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 507.129 ; gain = 217.469
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   8 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 10    
+	                8 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	  36 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module dreg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module imem 
+Detailed RTL Component Info : 
++---Muxes : 
+	  36 Input      4 Bit        Muxes := 1     
+Module ControlUnit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+Module transposer 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 32    
+Module MUX8 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module breg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 8     
+Module counter 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module combine 
+Detailed RTL Component Info : 
++---Adders : 
+	   8 Input     32 Bit       Adders := 1     
+Module breg__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mux2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'DP/transposerA/q_reg[27][7:0]' into 'DP/transposerA/q_reg[31][7:0]' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/transposer.v:16]
+INFO: [Synth 8-4471] merging register 'DP/transposerA/q_reg[26][7:0]' into 'DP/transposerA/q_reg[30][7:0]' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/transposer.v:16]
+INFO: [Synth 8-4471] merging register 'DP/transposerA/q_reg[25][7:0]' into 'DP/transposerA/q_reg[29][7:0]' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/transposer.v:16]
+INFO: [Synth 8-4471] merging register 'DP/transposerA/q_reg[24][7:0]' into 'DP/transposerA/q_reg[28][7:0]' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/transposer.v:16]
+INFO: [Synth 8-4471] merging register 'DP/transposerA/q_reg[23][7:0]' into 'DP/transposerA/q_reg[31][7:0]' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/transposer.v:16]
+INFO: [Synth 8-4471] merging register 'DP/transposerA/q_reg[22][7:0]' into 'DP/transposerA/q_reg[30][7:0]' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/transposer.v:16]
+INFO: [Synth 8-4471] merging register 'DP/transposerA/q_reg[21][7:0]' into 'DP/transposerA/q_reg[29][7:0]' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/transposer.v:16]
+INFO: [Synth 8-4471] merging register 'DP/transposerA/q_reg[20][7:0]' into 'DP/transposerA/q_reg[28][7:0]' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/transposer.v:16]
+INFO: [Synth 8-4471] merging register 'DP/transposerA/q_reg[19][7:0]' into 'DP/transposerA/q_reg[31][7:0]' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/transposer.v:16]
+INFO: [Synth 8-4471] merging register 'DP/transposerA/q_reg[18][7:0]' into 'DP/transposerA/q_reg[30][7:0]' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/transposer.v:16]
+INFO: [Synth 8-4471] merging register 'DP/transposerA/q_reg[17][7:0]' into 'DP/transposerA/q_reg[29][7:0]' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/transposer.v:16]
+INFO: [Synth 8-4471] merging register 'DP/transposerA/q_reg[16][7:0]' into 'DP/transposerA/q_reg[28][7:0]' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/transposer.v:16]
+INFO: [Synth 8-4471] merging register 'DP/transposerA/q_reg[15][7:0]' into 'DP/transposerA/q_reg[31][7:0]' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/transposer.v:16]
+INFO: [Synth 8-4471] merging register 'DP/transposerA/q_reg[14][7:0]' into 'DP/transposerA/q_reg[30][7:0]' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/transposer.v:16]
+INFO: [Synth 8-4471] merging register 'DP/transposerA/q_reg[13][7:0]' into 'DP/transposerA/q_reg[29][7:0]' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/transposer.v:16]
+INFO: [Synth 8-4471] merging register 'DP/transposerA/q_reg[12][7:0]' into 'DP/transposerA/q_reg[28][7:0]' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/transposer.v:16]
+INFO: [Synth 8-4471] merging register 'DP/transposerA/q_reg[11][7:0]' into 'DP/transposerA/q_reg[31][7:0]' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/transposer.v:16]
+INFO: [Synth 8-4471] merging register 'DP/transposerA/q_reg[10][7:0]' into 'DP/transposerA/q_reg[30][7:0]' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/transposer.v:16]
+INFO: [Synth 8-4471] merging register 'DP/transposerA/q_reg[9][7:0]' into 'DP/transposerA/q_reg[29][7:0]' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/transposer.v:16]
+INFO: [Synth 8-4471] merging register 'DP/transposerA/q_reg[8][7:0]' into 'DP/transposerA/q_reg[28][7:0]' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/transposer.v:16]
+INFO: [Synth 8-4471] merging register 'DP/transposerA/q_reg[7][7:0]' into 'DP/transposerA/q_reg[31][7:0]' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/transposer.v:16]
+INFO: [Synth 8-4471] merging register 'DP/transposerA/q_reg[6][7:0]' into 'DP/transposerA/q_reg[30][7:0]' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/transposer.v:16]
+INFO: [Synth 8-4471] merging register 'DP/transposerA/q_reg[5][7:0]' into 'DP/transposerA/q_reg[29][7:0]' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/transposer.v:16]
+INFO: [Synth 8-4471] merging register 'DP/transposerA/q_reg[4][7:0]' into 'DP/transposerA/q_reg[28][7:0]' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/transposer.v:16]
+INFO: [Synth 8-4471] merging register 'DP/transposerA/q_reg[3][7:0]' into 'DP/transposerA/q_reg[31][7:0]' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/transposer.v:16]
+INFO: [Synth 8-4471] merging register 'DP/transposerA/q_reg[2][7:0]' into 'DP/transposerA/q_reg[30][7:0]' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/transposer.v:16]
+INFO: [Synth 8-4471] merging register 'DP/transposerA/q_reg[1][7:0]' into 'DP/transposerA/q_reg[29][7:0]' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/transposer.v:16]
+INFO: [Synth 8-4471] merging register 'DP/transposerA/q_reg[0][7:0]' into 'DP/transposerA/q_reg[28][7:0]' [C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/transposer.v:16]
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[2][0]' (FDCE) to 'DP/regB/q_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[1][0]' (FDCE) to 'DP/regB/q_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[2][1]' (FDCE) to 'DP/regB/q_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[1][1]' (FDCE) to 'DP/regB/q_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[2][2]' (FDCE) to 'DP/regB/q_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[1][2]' (FDCE) to 'DP/regB/q_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[2][3]' (FDCE) to 'DP/regB/q_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[1][3]' (FDCE) to 'DP/regB/q_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[2][4]' (FDCE) to 'DP/regB/q_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[1][4]' (FDCE) to 'DP/regB/q_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[2][5]' (FDCE) to 'DP/regB/q_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[1][5]' (FDCE) to 'DP/regB/q_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[2][6]' (FDCE) to 'DP/regB/q_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[1][6]' (FDCE) to 'DP/regB/q_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[2][7]' (FDCE) to 'DP/regB/q_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[1][7]' (FDCE) to 'DP/regB/q_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[2][8]' (FDCE) to 'DP/regB/q_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[1][8]' (FDCE) to 'DP/regB/q_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[2][9]' (FDCE) to 'DP/regB/q_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[1][9]' (FDCE) to 'DP/regB/q_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[2][10]' (FDCE) to 'DP/regB/q_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[1][10]' (FDCE) to 'DP/regB/q_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[2][11]' (FDCE) to 'DP/regB/q_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[1][11]' (FDCE) to 'DP/regB/q_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[2][12]' (FDCE) to 'DP/regB/q_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[1][12]' (FDCE) to 'DP/regB/q_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[2][13]' (FDCE) to 'DP/regB/q_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[1][13]' (FDCE) to 'DP/regB/q_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[2][14]' (FDCE) to 'DP/regB/q_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[1][14]' (FDCE) to 'DP/regB/q_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[2][15]' (FDCE) to 'DP/regB/q_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[1][15]' (FDCE) to 'DP/regB/q_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[2][16]' (FDCE) to 'DP/regB/q_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[1][16]' (FDCE) to 'DP/regB/q_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[2][17]' (FDCE) to 'DP/regB/q_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[1][17]' (FDCE) to 'DP/regB/q_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[2][18]' (FDCE) to 'DP/regB/q_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[1][18]' (FDCE) to 'DP/regB/q_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[2][19]' (FDCE) to 'DP/regB/q_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[1][19]' (FDCE) to 'DP/regB/q_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[2][20]' (FDCE) to 'DP/regB/q_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[1][20]' (FDCE) to 'DP/regB/q_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[2][21]' (FDCE) to 'DP/regB/q_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[1][21]' (FDCE) to 'DP/regB/q_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[2][22]' (FDCE) to 'DP/regB/q_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[1][22]' (FDCE) to 'DP/regB/q_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[2][23]' (FDCE) to 'DP/regB/q_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[1][23]' (FDCE) to 'DP/regB/q_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[2][24]' (FDCE) to 'DP/regB/q_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[1][24]' (FDCE) to 'DP/regB/q_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[2][25]' (FDCE) to 'DP/regB/q_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[1][25]' (FDCE) to 'DP/regB/q_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[2][26]' (FDCE) to 'DP/regB/q_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[1][26]' (FDCE) to 'DP/regB/q_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[2][27]' (FDCE) to 'DP/regB/q_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[1][27]' (FDCE) to 'DP/regB/q_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[2][28]' (FDCE) to 'DP/regB/q_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[1][28]' (FDCE) to 'DP/regB/q_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[2][29]' (FDCE) to 'DP/regB/q_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[1][29]' (FDCE) to 'DP/regB/q_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[2][30]' (FDCE) to 'DP/regB/q_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[1][30]' (FDCE) to 'DP/regB/q_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'DP/transposerA/q_reg[31][1]' (FDCE) to 'DP/regB/q_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'DP/transposerA/q_reg[30][1]' (FDCE) to 'DP/regB/q_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'DP/transposerA/q_reg[29][1]' (FDCE) to 'DP/regB/q_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'DP/transposerA/q_reg[28][1]' (FDCE) to 'DP/regB/q_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[1][31]' (FDCE) to 'DP/regB/q_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[0][0]' (FDCE) to 'DP/regB/q_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[6][0]' (FDCE) to 'DP/regB/q_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[7][0]' (FDCE) to 'DP/regB/q_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[0][1]' (FDCE) to 'DP/regB/q_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[6][1]' (FDCE) to 'DP/regB/q_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[7][1]' (FDCE) to 'DP/regB/q_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[0][2]' (FDCE) to 'DP/regB/q_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[6][2]' (FDCE) to 'DP/regB/q_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[7][2]' (FDCE) to 'DP/regB/q_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[0][3]' (FDCE) to 'DP/regB/q_reg[0][4]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[6][3]' (FDCE) to 'DP/regB/q_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[7][3]' (FDCE) to 'DP/regB/q_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[0][4]' (FDCE) to 'DP/regB/q_reg[0][7]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[6][4]' (FDCE) to 'DP/regB/q_reg[0][7]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[7][4]' (FDCE) to 'DP/regB/q_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[0][5]' (FDCE) to 'DP/regB/q_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[6][5]' (FDCE) to 'DP/regB/q_reg[0][7]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[7][5]' (FDCE) to 'DP/regB/q_reg[0][7]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[0][6]' (FDCE) to 'DP/regB/q_reg[0][9]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[6][6]' (FDCE) to 'DP/regB/q_reg[0][9]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[7][6]' (FDCE) to 'DP/regB/q_reg[0][9]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[0][7]' (FDCE) to 'DP/regB/q_reg[0][8]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[6][7]' (FDCE) to 'DP/regB/q_reg[0][9]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[7][7]' (FDCE) to 'DP/regB/q_reg[0][9]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[0][8]' (FDCE) to 'DP/regB/q_reg[0][11]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[6][8]' (FDCE) to 'DP/regB/q_reg[0][11]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[7][8]' (FDCE) to 'DP/regB/q_reg[0][9]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[0][9]' (FDCE) to 'DP/regB/q_reg[0][10]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[6][9]' (FDCE) to 'DP/regB/q_reg[0][11]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[7][9]' (FDCE) to 'DP/regB/q_reg[0][11]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[0][10]' (FDCE) to 'DP/regB/q_reg[0][13]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[6][10]' (FDCE) to 'DP/regB/q_reg[0][13]'
+INFO: [Synth 8-3886] merging instance 'DP/regB/q_reg[7][10]' (FDCE) to 'DP/regB/q_reg[0][13]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\DP/regB/q_reg[2][31] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 652.539 ; gain = 362.879
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 658.570 ; gain = 368.910
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 658.570 ; gain = 368.910
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 658.570 ; gain = 368.910
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 658.570 ; gain = 368.910
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 658.570 ; gain = 368.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 658.570 ; gain = 368.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 658.570 ; gain = 368.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 658.570 ; gain = 368.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    27|
+|3     |LUT1   |     1|
+|4     |LUT2   |    57|
+|5     |LUT3   |    16|
+|6     |LUT4   |    13|
+|7     |LUT5   |    30|
+|8     |LUT6   |    48|
+|9     |FDCE   |    41|
+|10    |IBUF   |     2|
+|11    |OBUF   |    33|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------+---------------------+------+
+|      |Instance        |Module               |Cells |
++------+----------------+---------------------+------+
+|1     |top             |                     |   269|
+|2     |  DP            |DataPath             |   187|
+|3     |    ABR         |adder                |    68|
+|4     |    counter     |counter              |    41|
+|5     |    regAB       |breg__parameterized0 |    33|
+|6     |    transposerA |transposer           |    45|
+|7     |  imem          |InstructionMem       |    46|
+|8     |    pc_reg      |dreg                 |    46|
++------+----------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 658.570 ; gain = 368.910
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 658.570 ; gain = 368.910
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 658.570 ; gain = 368.910
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 762.676 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+180 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:37 . Memory (MB): peak = 762.676 ; gain = 473.016
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 762.676 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.runs/synth_1/dot_product_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file dot_product_top_utilization_synth.rpt -pb dot_product_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 16 09:29:32 2020...

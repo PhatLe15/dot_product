@@ -1,0 +1,23 @@
+0.6
+2019.1
+Sep  4 2019
+09:57:52
+C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sim_1/imports/new/dot_propduct_tb.v,1605547247,systemVerilog,,,,dot_product_tb,,,,,,,,
+C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/new/InstructionMem.v,1605544022,verilog,,C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/imports/datapath/adder.v,,InstructionMem,,,,,,,,
+C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/new/MUX4.v,1605051737,systemVerilog,,C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/new/combine.v,,MUX8,,,,,,,,
+C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/new/combine.v,1602015029,systemVerilog,,C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/counter.v,,combine,,,,,,,,
+C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/new/dmem.v,1605547179,systemVerilog,,C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/new/dmemB.v,,Amem,,,,,,,,
+C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/new/dmemB.v,1605547168,systemVerilog,,C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/dot_product_top.v,,Bmem,,,,,,,,
+C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/new/dreg.v,1605544884,verilog,,C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/new/imem.v,,dreg,,,,,,,,
+C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/new/imem.v,1605543963,verilog,,C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/imports/datapath/mux2.v,,imem,,,,,,,,
+C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/imports/datapath/adder.v,1596592946,verilog,,C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/new/dreg.v,,adder,,,,,,,,
+C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/imports/datapath/dreg.v,1605486708,systemVerilog,,C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/transposer.v,,breg,,,,,,,,
+C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/imports/datapath/mux2.v,1596592946,verilog,,C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/shifter.v,,mux2,,,,,,,,
+C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/AND.v,1596592946,verilog,,C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/new/ControlUnit.v,,AND,,,,,,,,
+C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/DataPath.v,1605543759,systemVerilog,,C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/new/MUX4.v,,DataPath,,,,,,,,
+C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/counter.v,1596592946,systemVerilog,,C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/new/dmem.v,,counter,,,,,,,,
+C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/dot_product_top.v,1605547720,systemVerilog,,C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/imports/datapath/dreg.v,,dot_product_top,,,,,,,,
+C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/shifter.v,1596592946,verilog,,,,shifter,,,,,,,,
+C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/transposer.v,1605051439,systemVerilog,,C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sim_1/imports/new/dot_propduct_tb.v,,transposer,,,,,,,,
+C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/new/ControlUnit.v,1605545929,verilog,,C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/new/InstructionMem.v,,ControlUnit,,,,,,,,

@@ -1,0 +1,20 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/DataPath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataPath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/new/MUX4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX8
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/new/combine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module combine
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/new/dmem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Amem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/new/dmemB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Bmem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/dot_product_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dot_product_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/imports/datapath/dreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module breg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sources_1/imports/sources_1/new/transposer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module transposer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/phatle/Stripe_DotProduct/Stripe_DotProduct.srcs/sim_1/imports/new/dot_propduct_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dot_product_tb
